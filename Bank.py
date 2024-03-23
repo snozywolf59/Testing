@@ -22,49 +22,49 @@ def thanhToan(v, p):
 
 
 class TestThanhToan(unittest.TestCase):
-    def less_than_zero(self):      #1T - 2
+    def test_less_than_zero(self):      #1T - 2
         self.assertEqual(
             thanhToan(False, -10),
             "Hoa don khong hop le!"
         )
 
-    def more_than_five_thousand(self): #1F - 3T - 4
+    def test_more_than_five_thousand(self): #1F - 3T - 4
         self.assertEqual(
             thanhToan(True, 5010),
             'Hoa don khong hop le!'
         )
 
-    def not_vip_less_than_hundred(self): #1F - 3F - 5T - 6T - 7
+    def test_not_vip_less_than_hundred(self): #1F - 3F - 5T - 6T - 7
         self.assertEqual(
             thanhToan(False, 80),
             'Khong uu dai'
         )
 
-    def not_vip_less_than_thousand(self): #1F - 3F - 5T - 6F - 8T - 9
+    def test_not_vip_less_than_thousand(self): #1F - 3F - 5T - 6F - 8T - 9
         self.assertEqual(
             thanhToan(False, 720),
             'Giam 5%'
         )
 
-    def not_vip_more_than_thousand(self): #1F - 3F - 5T - 6F - 8F - 10
+    def test_not_vip_more_than_thousand(self): #1F - 3F - 5T - 6F - 8F - 10
         self.assertEqual(
             thanhToan(False, 1500),
             'Giam 5%, tang voucher'
         )
 
-    def vip_less_than_hundred(self):    #1F - 3F - 5F - 11T - 12
+    def test_vip_less_than_hundred(self):    #1F - 3F - 5F - 11T - 12
         self.assertEqual(
             thanhToan(True, 30),
             "Tang voucher"
         )
 
-    def vip_less_than_thousand(self):   #1F - 3F - 5F - 11F - 13T - 14
+    def test_vip_less_than_thousand(self):   #1F - 3F - 5F - 11F - 13T - 14
         self.assertEqual(
             thanhToan(True, 273),
             "Giam 5%, tang voucher"
         )
 
-    def vip_more_than_thousand(self):   #1F - 3F - 5F - 11F - 13F - 15
+    def test_vip_more_than_thousand(self):   #1F - 3F - 5F - 11F - 13F - 15
         self.assertEqual(
             thanhToan(True, 3700),
             'Giam 10%, tang voucher')
