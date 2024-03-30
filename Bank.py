@@ -1,12 +1,12 @@
 #  MÔ TẢ BÀI TOÁN
 #  Một hệ thống bán hàng có đưa ra ưu đãi tùy theo mức giá đơn hàng mà người mua mua và loại khách. 
 #  Quy định giá trị tối đa của hóa đơn là 5 triệu:
-#  Khách thường	Dưới 100k	    Không ưu đãi
-#	            100k – 1000k	Giảm 5%
-#	            Hơn 1000k	    Giảm 5% + voucher
-#  Khách vip	Dưới 100k	    Tặng voucher
-#	            100k – 1000k	Giảm 5% + tặng voucher
-#            	Hơn 1000k	    Giảm 10% + tặng voucher
+#  Khách thường     Dưới 100k	    Không ưu đãi
+#	                100k – 1000k	Giảm 5%
+#	                Hơn 1000k	    Giảm 5% + voucher
+#  Khách vip	    Dưới 100k	    Tặng voucher
+#	                100k – 1000k	Giảm 5% + tặng voucher
+#            	    Hơn 1000k	    Giảm 10% + tặng voucher
 #    Hãy thiết kế chương trình thỏa mãn:
 #    -	Input:
 #        o	Loại khách hàng (Vip hay không)
