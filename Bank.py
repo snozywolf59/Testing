@@ -21,7 +21,7 @@
 import unittest
 
 
-def thanhToan(v, p):
+def thanhToan(v, p):                        #0
     if p <= 0:                              #1
         return 'Hoa don khong hop le!'      #2
     if p > 5000:                            #3
